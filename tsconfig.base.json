@@ -18,6 +18,9 @@
       "@nx-angular-stencil-storybook/core-components": [
         "dist/packages/core-components"
       ],
+      "@nx-angular-stencil-storybook/core-components-angular": [
+        "packages/core-components-angular/src/index.ts"
+      ],
       "@nx-angular-stencil-storybook/core-components/loader": [
         "dist/packages/core-components/loader"
       ]

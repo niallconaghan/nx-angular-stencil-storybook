@@ -2,18 +2,39 @@
   "name": "nx-angular-stencil-storybook",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "postinstall": "ngcc --properties es2015 browser module main"
+  },
   "private": true,
   "devDependencies": {
+    "@angular-devkit/build-angular": "~13.3.0",
+    "@angular-eslint/eslint-plugin": "~13.1.0",
+    "@angular-eslint/eslint-plugin-template": "~13.1.0",
+    "@angular-eslint/template-parser": "~13.1.0",
+    "@angular/cli": "~13.3.0",
+    "@angular/compiler-cli": "~13.3.0",
+    "@angular/language-service": "~13.3.0",
+    "@nrwl/angular": "^14.1.9",
     "@nrwl/cli": "14.1.9",
+    "@nrwl/cypress": "14.1.9",
+    "@nrwl/eslint-plugin-nx": "14.1.9",
     "@nrwl/jest": "14.1.9",
+    "@nrwl/linter": "14.1.9",
     "@nrwl/workspace": "14.1.9",
     "@nxext/stencil": "^14.0.3",
+    "@stencil/angular-output-target": "^0.4.0",
     "@stencil/core": "^2.15.2",
     "@stencil/sass": "1.5.2",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "~5.18.0",
+    "@typescript-eslint/parser": "~5.18.0",
+    "cypress": "^9.1.0",
+    "eslint": "~8.12.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
     "jest": "27.5.1",
+    "jest-preset-angular": "11.1.1",
     "nx": "14.1.9",
     "prettier": "^2.5.1",
     "puppeteer": "^13.7.0",
@@ -25,6 +46,16 @@
     "packages/**"
   ],
   "dependencies": {
-    "tslib": "^2.3.0"
+    "@angular/animations": "~13.3.0",
+    "@angular/common": "~13.3.0",
+    "@angular/compiler": "~13.3.0",
+    "@angular/core": "~13.3.0",
+    "@angular/forms": "~13.3.0",
+    "@angular/platform-browser": "~13.3.0",
+    "@angular/platform-browser-dynamic": "~13.3.0",
+    "@angular/router": "~13.3.0",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
   }
 }
