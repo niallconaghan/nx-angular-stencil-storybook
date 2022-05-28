@@ -3,10 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CoreComponentsAngularModule } from '@nx-angular-stencil-storybook/core-components-angular';
 import { AppComponent } from './app.component';
 
-import { defineCustomElements } from '@nx-angular-stencil-storybook/core-components/loader';
-
-defineCustomElements();
-
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, CoreComponentsAngularModule],
